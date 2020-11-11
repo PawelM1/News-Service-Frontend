@@ -1,0 +1,20 @@
+.votebox {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.upvote,.downvote {
+  cursor: pointer;
+
+}
+.upvote:hover {
+  color: green;
+}
+.downvote:hover {
+  color: red;
+}
+
+.votecount{
+  font-weight: bold;
+}

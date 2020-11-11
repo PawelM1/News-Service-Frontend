@@ -1,0 +1,71 @@
+.userdetails{
+  background-color: transparent;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 1;
+  border: 0;
+}
+
+.userdetails:hover{
+  opacity: 0.6;
+  border-bottom: 1px #ffffff solid;
+}
+
+.dropdown-item{
+  background-color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown-item:hover{
+  background-color: #0079D3;
+}
+
+.dropdown-menu{
+  background-color: #f8f9fa;
+}
+
+.account-icon{
+  border-radius: 5px;
+  float: left;
+  margin-right: 5px;
+  max-height: 25px;
+  max-width: 25px;
+}
+
+
+.page-title-text{
+  color: #FFFFFF;
+  font-weight: 800;
+  height: 90px;
+  width: 90px;
+}
+.header-page-name{
+  text-decoration: none;
+}
+
+.login, .signup{
+  background-color: transparent;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 1px 15px;
+}
+
+.signup:hover, .login:hover, .header-page-name:hover{
+  opacity: 0.6;
+}

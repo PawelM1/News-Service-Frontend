@@ -1,0 +1,24 @@
+<div class="row post" *ngFor="let post of posts">
+  <div class="col-1 align-self-center">
+    <app-vote [post]="post"></app-vote>
+  </div>
+  <div class="col-3 align-self-center">
+    <a href="{{post.url}}">
+      <img class="post-img" alt="Article image"
+           src="{{post.newsImage}}"/>
+    </a>
+  </div>
+  <div class="col-8 tag-Url ">
+    #<a routerLink="/tag/{{post.tag}}">{{post.tag}}</a>
+    Posted by <a class="username" routerLink="/user/{{post.author}}">{{post.author}}</a>
+    <hr/>
+    <div class="post-title">
+      <a class="post-name" href="{{post.url}}">{{post.title}}</a>
+    </div>
+    <div>
+      <a href="{{post.url}}">
+        <p class="post-text">{{post.content}}</p>
+      </a>
+    </div>
+  </div>
+</div>

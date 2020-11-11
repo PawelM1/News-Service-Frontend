@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row pt-3">
+      <app-post [posts]="posts.reverse()"></app-post>
+  </div>
+</div>
+
+<div>
+  <fa-icon (click)="goToCreatePost()" class="addPost" [icon]="faPenSquare"></fa-icon>
+</div>
+
+

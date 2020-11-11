@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="create-news-container col-md-8">
+      <form [formGroup]="createPostForm" (ngSubmit)="createPost()">
+        <div class="form-group">
+          <div class="closeIcon">
+            <fa-icon (click)="discardPost()" [icon]="faWindowClose"></fa-icon>
+          </div>
+          <div class="create-news-heading pt-2">Add new News</div>
+
+          <hr/>
+          <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px"
+                 placeholder="Title">
+
+          <input type="text" class="form-control" [formControlName]="'news_url'" style="margin-top: 5px"
+                 placeholder="News Url">
+
+          <input type="text" class="form-control" [formControlName]="'imageUrl'" style="margin-top: 5px"
+                 placeholder="News image Url">
+
+          <input type="text" class="form-control" [formControlName]="'tag'" style="margin-top: 5px" placeholder="tag">
+
+          <input type="text" class="form-control" [formControlName]="'content'" style="margin-top: 5px"
+                 placeholder="content">
+
+          <span>
+            <div class="row justify-content-center pt-3">
+              <button type="submit" class="btnCreateNews">Add News</button>
+            </div>
+          </span>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

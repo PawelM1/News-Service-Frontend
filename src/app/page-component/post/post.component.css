@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+}
+
+.post {
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #39485f;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.post-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.post-name {
+  color: white;
+}
+
+.post-name:hover {
+  color: #dbd7d7;
+}
+
+.post-text {
+  color: #ffffff;
+}
+
+.post-text:hover {
+  color: #dbd7d7;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.tag-Url {
+  color: #878A8C;
+}
+
+.post-text-hover {
+  color: #dbd9d9;
+}
