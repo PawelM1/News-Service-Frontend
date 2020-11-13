@@ -8,6 +8,7 @@ import {UserProfileComponent} from "./user-profile/user-profile.component";
 import {AuthGuard} from "./auth/guard/auth.guard";
 import {PostsByTagComponent} from "./posts-by-tag/posts-by-tag.component";
 import {UserInformationComponent} from "./user-information/user-information.component";
+import {PatchPostComponent} from "./post/patch-post/patch-post.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'user-profile/:username', component: UserProfileComponent, canActivate:[AuthGuard]},
   {path: 'user/:username', component: UserInformationComponent},
-  {path: 'tag/:tagName', component: PostsByTagComponent}
+  {path: 'tag/:tagName', component: PostsByTagComponent},
+  {path: 'edit-post/:id', component: PatchPostComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

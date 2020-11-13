@@ -1,0 +1,45 @@
+.edit-news-container {
+  margin-top: 10px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  background-color: #3c4d66;
+  color: #878A8C;
+  border-radius: 4px;
+}
+
+.edit-news-heading {
+  font-size: 18px;
+  text-align: center;
+  background-color: #39485f;
+  color: #FFFFFF;
+}
+
+.btnEditNews {
+  margin-top: 5px;
+  background-color: #33a524;
+  color: aliceblue;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 60px;
+}
+
+.btnEditNews:hover {
+  opacity: 0.8;
+}
+
+.closeIcon {
+  font-size: 20px;
+  display: block;
+  float: right;
+  clear: left;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

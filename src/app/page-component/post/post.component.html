@@ -11,6 +11,12 @@
   <div class="col-8 tag-Url ">
     #<a routerLink="/tag/{{post.tag}}">{{post.tag}}</a>
     Posted by <a class="username" routerLink="/user/{{post.author}}">{{post.author}}</a>
+
+    <a routerLink="/edit-post/{{post.postId}}">
+      <fa-icon *ngIf="post.author == postAuthor" class="editIcon" [icon]="faEdit"></fa-icon>
+    </a>
+    <fa-icon *ngIf="post.author == postAuthor" (click)="deletePost()" class="deleteIcon" [icon]="faDelete"></fa-icon>
+
     <hr/>
     <div class="post-title">
       <a class="post-name" href="{{post.url}}">{{post.title}}</a>

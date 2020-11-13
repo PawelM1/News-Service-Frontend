@@ -44,3 +44,22 @@ a {
 .post-text-hover {
   color: #dbd9d9;
 }
+
+.editIcon{
+  color: #0bd6be;
+  font-size: 20px;
+  position: absolute;
+  right: 60px;
+}
+
+.deleteIcon{
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.editIcon:hover, .deleteIcon:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}

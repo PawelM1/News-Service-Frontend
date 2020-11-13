@@ -19,6 +19,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {UserProfileComponent} from './user-profile/user-profile.component';
 import {PostsByTagComponent} from './posts-by-tag/posts-by-tag.component';
 import {UserInformationComponent} from './user-information/user-information.component';
+import { PatchPostComponent } from './post/patch-post/patch-post.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {UserInformationComponent} from './user-information/user-information.comp
     CreatePostComponent,
     UserProfileComponent,
     PostsByTagComponent,
-    UserInformationComponent
+    UserInformationComponent,
+    PatchPostComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="edit-news-container col-md-8">
+      <form [formGroup]="editPostForm" (ngSubmit)="patchPost()">
+        <div class="form-group">
+          <div class="closeIcon">
+            <fa-icon (click)="discardPost()" [icon]="faWindowClose"></fa-icon>
+          </div>
+          <div class="edit-news-heading pt-2">Edit News</div>
+
+          <hr/>
+          <span style="color: white">Title</span>
+          <input type="text" [formControlName]="'title'" class="form-control" style="margin-top: 5px">
+
+          <span style="color: white">Content</span>
+          <input type="text" class="form-control" [formControlName]="'content'" style="margin-top: 5px"
+                 placeholder="content">
+
+          <span style="color: white">Tag</span>
+          <input type="text" class="form-control" [formControlName]="'tag'" style="margin-top: 5px" placeholder="tag">
+
+          <span style="color: white">News Url</span>
+          <input type="text" class="form-control" [formControlName]="'news_url'" style="margin-top: 5px"
+                 placeholder="News Url">
+
+          <span style="color: white">Image Url</span>
+          <input type="text" class="form-control" [formControlName]="'imageUrl'" style="margin-top: 5px"
+                 placeholder="News image Url">
+
+          <span>
+            <div class="row justify-content-center pt-3">
+              <button type="submit" class="btnEditNews">Edit News</button>
+            </div>
+          </span>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

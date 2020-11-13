@@ -31,4 +31,8 @@ export class PostService {
     return this.http.get<PostModel>('http://localhost:8080/api/posts/' + id);
   }
 
+  patchPost(id: number, postPayload: CreatePostPayload) {
+    return this.http.patch('http://localhost:8080/api/posts/' + id, postPayload);
+  }
+
 }
