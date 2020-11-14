@@ -15,8 +15,8 @@
     <a routerLink="/edit-post/{{post.postId}}">
       <fa-icon *ngIf="post.author == postAuthor" class="editIcon" [icon]="faEdit"></fa-icon>
     </a>
-    <fa-icon *ngIf="post.author == postAuthor" (click)="deletePost()" class="deleteIcon" [icon]="faDelete"></fa-icon>
 
+    <fa-icon *ngIf="post.author == postAuthor" (click)="deletePost(post.postId)" class="deleteIcon" [icon]="faDelete"></fa-icon>
     <hr/>
     <div class="post-title">
       <a class="post-name" href="{{post.url}}">{{post.title}}</a>

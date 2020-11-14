@@ -35,4 +35,7 @@ export class PostService {
     return this.http.patch('http://localhost:8080/api/posts/' + id, postPayload);
   }
 
+  deletePost(id: number) {
+    return this.http.delete('http://localhost:8080/api/posts/' + id);
+  }
 }

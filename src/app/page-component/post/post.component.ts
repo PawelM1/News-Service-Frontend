@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 import {PostModel} from "../../service/post-model";
 import {faEdit} from "@fortawesome/free-solid-svg-icons/faEdit";
 import {faTimesCircle} from "@fortawesome/free-solid-svg-icons/faTimesCircle";
+import {PostService} from "../../service/post.service";
+import {throwError} from "rxjs";
 
 @Component({
   selector: 'app-post',
@@ -15,7 +17,7 @@ export class PostComponent implements OnInit {
   faDelete = faTimesCircle;
   postAuthor: string;
 
-  constructor() {
+  constructor(private postService: PostService) {
     if (localStorage.getItem('ngx-webstorage|username') != null) {
       this.postAuthor = localStorage.getItem('ngx-webstorage|username');
       this.postAuthor = this.postAuthor.substring(1, this.postAuthor.length - 1);
@@ -25,7 +27,11 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deletePost() {
-    //TODO: implement delete
+  deletePost(id: number) {
+    this.postService.deletePost(id).subscribe(() => {
+      window.location.reload();
+    }, error => {
+      throwError(error);
+    });
   }
 }
