@@ -4,17 +4,19 @@
   flex-direction: column;
 }
 
-.upvote,.downvote {
+.upvote, .downvote {
   cursor: pointer;
 
 }
+
 .upvote:hover {
   color: green;
 }
+
 .downvote:hover {
   color: red;
 }
 
-.votecount{
+.votecount {
   font-weight: bold;
 }

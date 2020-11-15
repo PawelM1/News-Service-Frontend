@@ -19,10 +19,10 @@
 }
 
 .btnCreateNews {
-  background-color: #18a7d2;
+  margin-top: 5px;
+  background-color: #33a524;
   color: aliceblue;
-  fill: #0079D3;
-  border: 1px solid #0079D3;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
