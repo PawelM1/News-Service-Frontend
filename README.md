@@ -1,6 +1,22 @@
-# NewsService
-
+# News-Service-Application
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+
+Frontend part of the application that allows you to place links to external websites with a short description and rate them by other user.
+
+# Video:
+Check out the video presenting the applications.
+
+[![Watch the video](https://i.imgur.com/hYeCkAk.jpg)](https://streamable.com/p12k78)
+
+# Screenshot
+Main page app screen.
+
+![Screenshot](https://i.imgur.com/jdxNjjx.png)
+
+# Backend: 
+https://github.com/PawelM1/News-Service-Backend
+
+
 
 ## Development server
 
