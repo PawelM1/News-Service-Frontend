@@ -12,30 +12,30 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getAllPosts(): Observable<Array<PostModel>>{
-    return this.http.get<Array<PostModel>>('http://localhost:8080/api/posts/')
+    return this.http.get<Array<PostModel>>('https://news-servvice.herokuapp.com/api/posts/')
   }
 
   createPost(postPayload: CreatePostPayload): Observable<any> {
-    return this.http.post('http://localhost:8080/api/posts/', postPayload);
+    return this.http.post('https://news-servvice.herokuapp.com/api/posts/', postPayload);
   }
 
   getAllPostsByUser(username: string) {
-    return this.http.get<Array<PostModel>>('http://localhost:8080/api/posts/user/' + username);
+    return this.http.get<Array<PostModel>>('https://news-servvice.herokuapp.com/api/posts/user/' + username);
   }
 
   getAllPostsByTag(tagName: string){
-    return this.http.get<Array<PostModel>>('http://localhost:8080/api/posts/tag/' + tagName);
+    return this.http.get<Array<PostModel>>('https://news-servvice.herokuapp.com/api/posts/tag/' + tagName);
   }
 
   getPost(id: number): Observable<PostModel> {
-    return this.http.get<PostModel>('http://localhost:8080/api/posts/' + id);
+    return this.http.get<PostModel>('https://news-servvice.herokuapp.com/api/posts/' + id);
   }
 
   patchPost(id: number, postPayload: CreatePostPayload) {
-    return this.http.patch('http://localhost:8080/api/posts/' + id, postPayload);
+    return this.http.patch('https://news-servvice.herokuapp.com/api/posts/' + id, postPayload);
   }
 
   deletePost(id: number) {
-    return this.http.delete('http://localhost:8080/api/posts/' + id);
+    return this.http.delete('https://news-servvice.herokuapp.com/api/posts/' + id);
   }
 }

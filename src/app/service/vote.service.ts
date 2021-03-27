@@ -11,6 +11,6 @@ export class VoteService {
   constructor(private httpClient:HttpClient) { }
 
   vote(votePayload: VotePayload) : Observable<any>{
-    return this.httpClient.post('http://localhost:8080/api/votes/', votePayload);
+    return this.httpClient.post('https://news-servvice.herokuapp.com/api/votes/', votePayload);
   }
 }
