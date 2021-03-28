@@ -1,10 +1,17 @@
-<div class="container">
+<div class="loading text-center" *ngIf="loading">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div>Receiving data from the server. This may take a while because the server is placed on a free heroku account, especially if the application starts after a long pause.</div>
+</div>
+
+<div class="container" *ngIf="!loading">
   <div class="row pt-3">
       <app-post [posts]="posts.reverse()"></app-post>
   </div>
 </div>
 
-<div>
+<div *ngIf="!loading">
   <fa-icon (click)="goToCreatePost()" class="addPost" [icon]="faPenSquare"></fa-icon>
 </div>
 
