@@ -3,6 +3,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Frontend part of the application that allows you to place links to external websites with a short description and rate them by other user.
 
+# Live Demo
+https://news-service.netlify.app/
+
 # Video:
 Check out the video presenting the applications.
 
